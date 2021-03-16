@@ -1,1 +1,6 @@
-123
+{
+ "users": [
+    {"id": 1, "email": "darkhan@mail.ru", "password": "#Password123"},
+    {"id": 2, "email": "abzik@mail.ru", "password": "abzik21"}
+  ] 
+}
