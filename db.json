@@ -2,5 +2,17 @@
  "users": [
     {"id": 1, "email": "darkhan@mail.ru", "password": "#Password123"},
     {"id": 2, "email": "abzik@mail.ru", "password": "abzik21"}
-  ] 
+  ], 
+ "shoes": [
+  { "id": 1, "title": "Nike Joyride Run Flyknit", "price": 20000},
+    { "id": 2, "title": "Nike AirForce 1", "price": 50000},
+    { "id": 3, "title": "Nike AirForce 1 Low", "price": 30000},
+    { "id": 4, "title": "Nike Air max 90", "price": 40000},
+    { "id": 5, "title": "Nike SB Dunk Low Pro QS", "price": 65000},
+    { "id": 6, "title": "Nike React Vision", "price": 38000},
+    { "id": 7, "title": "Nike Air More Uptempo", "price": 70000},
+    { "id": 8, "title": "Nike Mamba Focus", "price": 45000},
+    { "id": 9, "title": "Nike Joyride React Presto", "price": 55000},
+    { "id": 10, "title": "Nike Joyride Shox R4", "price": 100000}
+  ]
 }
