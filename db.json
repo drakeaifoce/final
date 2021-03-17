@@ -3,5 +3,7 @@
     {"id": 1, "email": "darkhan@mail.ru", "name": "drakeaifoce" ,"password": "#Password123"},
     {"id": 2, "email": "abzik@mail.ru", "name": "Abzik", "password": "#Abzik123"}
   ], 
- "shoes": 
+ "shoes": [
+  
+  ]
 }
