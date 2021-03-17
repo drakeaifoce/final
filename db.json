@@ -5,6 +5,6 @@
   ], 
  "phones": [
     {"id": 1, "name": "iPhone 12 Pro Max Gold", "image": "https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/8/c/8cdc1b58cac8a2d37fbed9d0e9decbedf1b737da_228637_1.jpg", "price": 669990},
-    {"id": 2, "name": "iPhone 12", "image": "", "price": 499 990}
+    {"id": 2, "name": "iPhone 12", "image": "https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/a/0/a03f2b954cb450951c791dcf1099c5bfa2b615a6_228613_1.jpg", "price": 499 990}
  ]
 }
