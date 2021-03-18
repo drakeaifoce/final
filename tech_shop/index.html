@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" 
+        style="background-color: #DBC2CF;border-color: transparent;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: transparent; border: 0; outline: none;">
+                    <span class=" glyphicon glyphicon-user "></span>
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"><p id="main">Main</p></a></li>
+                        <li><a href="account.html"><p id="acc">My account</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1>TECHNO-STORE</h1>
+            <a href="#eng" data-reload>English</a>
+            <a href="#ru" data-reload>Русский</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 7.5%;">
+        <input id="searchfield" class="searchStyle" type="text" placeholder="Search. . ." />
+        <button onclick="search()" id="searchbutton" class="btn btn-dark" style="margin-left:10px; outline: 0; background-color: #8789C0; color: white;">Search</button>
+
+        <div id="444" style="width:100%;">
+            <h1 id="search1"></h1>
+            <h3 id="search3"></h3>
+            <img id="search2" src="" style="transition:0.5s; width: 30%;"/>
+        </div>
+
+        <h1 style="text-align: center;" id="lr">LAST RELEASES</h1>
+        <table class="table-bordered">
+            <tr>
+                <td>
+                    <div>
+                        <h1>iPhone 12</h1>
+                        <br>
+                        <h2>128GB Black</h2>
+                        <img src="https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/a/0/a03f2b954cb450951c791dcf1099c5bfa2b615a6_228613_1.jpg">
+                        <h3>499 990 ₸</h3>
+                    </div>
+
+                    <div>
+                        <button class=".btn-default" id="but">
+                            BUY
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <h1>Samsung Galaxy S21 Ultra</h1>
+                        <h2>256GB Black</h2>
+                        <img src="https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/e/d/ed1e3c3e66d42450a395d445041c55e80931c454_232900_1x.jpg">
+                        <h3>649 990 ₸</h3>
+                    </div>
+
+                    <div>
+                        <button class=".btn-default" id="but0">
+                            BUY
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <h1>iPhone 12 Pro Max</h1>
+                        <br>
+                        <h2>128GB Gold</h2>
+                        <img src="https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/8/c/8cdc1b58cac8a2d37fbed9d0e9decbedf1b737da_228637_1.jpg">
+                        <h3>669 990 ₸</h3>
+                    </div>
+
+                    <div>
+                        <a href="about.html">
+                        <button class=".btn-default" id="but1">                  
+                                BUY
+                        </button>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // var dataReload = document.querySelectorAll("[data-reload]");
+
+        var language = {
+            eng: {
+                last_release: "Last release",
+                buy_button: "Buy",
+                menu: "Menu",
+                acc: "My account",
+                search: "Search"
+            },
+            ru: {
+                last_release: "Новинки",
+                buy_button: "Купить",
+                menu: "Меню",
+                acc: "Мой аккаунт",
+                search: "Поиск"
+            }
+        };
+
+        if (window.location.hash){
+            if (window.location.hash === "#ru"){
+                lr.textContent = language.ru.last_release;
+                but.textContent = language.ru.buy_button;
+                but0.textContent = language.ru.buy_button;
+                but1.textContent = language.ru.buy_button;
+                main.textContent = language.ru.menu;
+                acc.textContent = language.ru.acc;
+                searchbutton.textContent = language.ru.search;
+            }
+        }
+
+        // for(i=0;i <= dataReload.length; i++){
+        //     dataReload[i].onclick = function() {
+        //         location.reload(true);
+        //     }
+        // }
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
