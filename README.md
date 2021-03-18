@@ -1,2 +1,3 @@
 # final
-FAKE API
+db.json is a fake API used for project.
+
